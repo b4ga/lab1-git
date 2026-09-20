@@ -35,13 +35,26 @@ int main() {
 				cout << "Работа завершена.\n";
 				break;
 			case 1:
-				cout << "Введите катеты a и b: ";
-				cin >> a >> b;
+				do {
+					cout << "Введите катеты a и b: ";
+					cin >> a >> b;
+
+					if (a <= 0 || b <= 0) {
+						cout << "Введены неположительные значения катетов.\n";
+					}
+				} while (a <= 0 || b <= 0);
 				cout << "Гипотенуза = " << hypotenuse(a, b) << "\n";
+
 				break;
 			case 2:
-				cout << "Введите катеты a и b: ";
-				cin >> a >> b;
+				do {
+					cout << "Введите катеты a и b: ";
+					cin >> a >> b;
+
+					if (a <= 0 || b <= 0) {
+						cout << "Введены неположительные значения катетов.\n";
+					}
+				} while (a <= 0 || b <= 0);
 				cout << "Площадь = " << rightTriangleArea(a, b) << "\n";
 				break;
 			default: 
