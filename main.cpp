@@ -12,6 +12,10 @@ double hypotenuse(double a, double b) {
 	return sqrt(a * a + b * b);
 }
 
+double rightTriangleArea(double a, double b) {
+	return a * b / 2;
+}
+
 // ===== Главная функция: меню =====
 int main() {
 	SetConsoleOutputCP(CP_UTF8);
@@ -21,6 +25,7 @@ int main() {
 	do {
 		cout << "\n=== Вариант 7: расчёты для прямоугольного треугольника ===\n";
 		cout << "1. Гипотенуза\n";
+		cout << "2. Площадь\n";
 		cout << "0. Выход\n";
 		cout << "Выберите пункт: ";
 		cin >> choice;
@@ -33,6 +38,11 @@ int main() {
 				cout << "Введите катеты a и b: ";
 				cin >> a >> b;
 				cout << "Гипотенуза = " << hypotenuse(a, b) << "\n";
+				break;
+			case 2:
+				cout << "Введите катеты a и b: ";
+				cin >> a >> b;
+				cout << "Площадь = " << rightTriangleArea(a, b) << "\n";
 				break;
 			default: 
 				cout << "Такого варианта нет.\n";
