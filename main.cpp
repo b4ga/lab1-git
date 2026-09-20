@@ -43,7 +43,7 @@ int main() {
 						cout << "Введены неположительные значения катетов.\n";
 					}
 				} while (a <= 0 || b <= 0);
-				cout << "Гипотенуза = " << hypotenuse(a, b) << "\n";
+				cout << "Гипотенуза = " << hypotenuse(a, b) << " метров\n";
 
 				break;
 			case 2:
@@ -55,7 +55,7 @@ int main() {
 						cout << "Введены неположительные значения катетов.\n";
 					}
 				} while (a <= 0 || b <= 0);
-				cout << "Площадь = " << rightTriangleArea(a, b) << "\n";
+				cout << "Площадь = " << rightTriangleArea(a, b) << " метров\n";
 				break;
 			default: 
 				cout << "Такого варианта нет.\n";
